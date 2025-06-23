@@ -1,4 +1,3 @@
-
 # Proyecto: Selector de Secuencia de Alarmas Semanales con ESP32
 
 Este proyecto permite programar y ejecutar automáticamente **eventos semanales** en una placa ESP32, controlando periféricos como un **relé, LEDs y un buzzer piezoeléctrico**, con ayuda de un **reloj de tiempo real (RTC DS3231)** y una **interfaz web en modo punto de acceso (AP)**. El usuario puede seleccionar entre **dos secuencias diferentes de eventos**, tanto para la semana actual como para la siguiente.
@@ -64,7 +63,7 @@ La ESP32 actúa como un sistema autónomo de alarmas semanales. Cada semana se e
 ## Esquema de Conexiones
 
 | Componente | Pin ESP32 |
-|------------|-----------|
+| ---------- | --------- |
 | LCD SDA    | GPIO 21   |
 | LCD SCL    | GPIO 22   |
 | RTC SDA    | GPIO 21   |
@@ -117,13 +116,13 @@ struct Alarma {
 
 Cuando coincide el día, la hora y el minuto, se ejecuta el evento correspondiente:
 
-| Evento | Acción                          |
-|--------|---------------------------------|
-| 0      | Activar relé                    |
-| 1–3    | Encender LED 1, 2 o 3           |
-| 4      | LEDs en secuencia rítmica       |
-| 5–9    | Buzzer en distintos patrones    |
-| 10     | Melodía "Zelda" por buzzer      |
+| Evento | Acción                       |
+| ------ | ---------------------------- |
+| 0      | Activar relé                 |
+| 1–3    | Encender LED 1, 2 o 3        |
+| 4      | LEDs en secuencia rítmica    |
+| 5–9    | Buzzer en distintos patrones |
+| 10     | Melodía "Zelda" por buzzer   |
 
 Cada evento usa `delay()` porque nunca se solapan dos eventos. Por tanto, el uso de delay no interfiere con la lógica general.
 
