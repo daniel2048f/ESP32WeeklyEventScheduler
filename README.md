@@ -130,7 +130,7 @@ Cada evento usa `delay()` porque nunca se solapan dos eventos. Por tanto, el uso
 
 ## Interfaz Web
 
-![Imagen de WhatsApp 2025-06-23 a las 18 56 23_dc016c82](https://github.com/user-attachments/assets/9b822e1a-03bd-46fc-8a0a-4fa00b380059)
+![Imagen de WhatsApp 2025-06-23 a las 19 00 16_f43bdd57](https://github.com/user-attachments/assets/33107232-1925-4bff-99b8-88c0f3bd98d8)
 
 Diseñada con HTML y CSS moderno. Dos menús desplegables permiten al usuario seleccionar:
 
