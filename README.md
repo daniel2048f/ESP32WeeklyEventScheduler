@@ -150,7 +150,7 @@ El sitio es **responsive**, lo cual lo hace cómodo para visualizar y operar des
 5. Seleccionar la secuencia deseada.
 6. ¡Listo! El sistema ejecutará eventos según lo programado.
 
-**Nota:** Es necesario incluir las bibliotecas piezo-music.h y example-music.h, las cuales también se adjuntan en este repositorio. Puedes agregarlas desde Arduino IDE en Program > Include Library > Add .ZIP Library.
+**Nota:** Es necesario incluir las bibliotecas piezo-music.h y example-music.h, las cuales también se adjuntan en este repositorio. Puedes agregarlas desde Arduino IDE incluyendo Arduino-piezo-music-master.zip en Program > Include Library > Add .ZIP Library.
 
 ---
 
