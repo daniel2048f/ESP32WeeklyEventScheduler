@@ -1,6 +1,6 @@
 # Proyecto: Selector de Secuencia de Alarmas Semanales con ESP32
 
-Este proyecto permite programar y ejecutar automáticamente **eventos semanales** en una placa ESP32, controlando periféricos como un **relé, LEDs y un buzzer piezoeléctrico**, con ayuda de un **reloj de tiempo real (RTC DS3231)** y una **interfaz web en modo punto de acceso (AP)**. El usuario puede seleccionar entre **dos secuencias diferentes de eventos**, tanto para la semana actual como para la siguiente.
+Este proyecto permite programar y ejecutar automáticamente **eventos semanales** en una placa ESP32, controlando periféricos como un **relé de estado sólido, LEDs y un buzzer piezoeléctrico**, con ayuda de un **reloj de tiempo real (RTC DS3231)** y una **interfaz web en modo punto de acceso (AP)**. El usuario puede seleccionar entre **dos secuencias diferentes de eventos**, tanto para la semana actual como para la siguiente.
 
 ---
 
@@ -37,7 +37,7 @@ La ESP32 actúa como un sistema autónomo de alarmas semanales. Cada semana se e
 
 - Reloj de tiempo real **RTC DS3231** para mantener precisión aún sin energía.
 - Pantalla **LCD I2C 16x2** que muestra fecha y hora actualizadas cada segundo.
-- Interfaz web moderna (HTML + CSS) con dos selectores:
+- Interfaz web (HTML + CSS) con dos selectores:
   - Para la **secuencia actual** (semana en curso)
   - Para la **secuencia de la próxima semana**
 - Cambio automático de secuencia cada **lunes a las 00:00**.
@@ -130,6 +130,8 @@ Cada evento usa `delay()` porque nunca se solapan dos eventos. Por tanto, el uso
 
 ## Interfaz Web
 
+![Imagen de WhatsApp 2025-06-23 a las 19 00 16_f43bdd57](https://github.com/user-attachments/assets/33107232-1925-4bff-99b8-88c0f3bd98d8)
+
 Diseñada con HTML y CSS moderno. Dos menús desplegables permiten al usuario seleccionar:
 
 - La **secuencia de esta semana** (inmediatamente activa)
@@ -144,9 +146,11 @@ El sitio es **responsive**, lo cual lo hace cómodo para visualizar y operar des
 1. Cargar el código en la ESP32 desde el IDE de Arduino.
 2. Encender el sistema con todos los módulos conectados.
 3. Conectarse a la red WiFi `AlarmaESP32`.
-4. Abrir el navegador y acceder a la IP local (mostrada por el monitor serie).
+4. Abrir el navegador y acceder a la IP local mostrada por el monitor serie (Usualmente es 192.168.4.1).
 5. Seleccionar la secuencia deseada.
 6. ¡Listo! El sistema ejecutará eventos según lo programado.
+
+**Nota:** Es necesario incluir las bibliotecas piezo-music.h y example-music.h, las cuales también se adjuntan en este repositorio. Puedes agregarlas desde Arduino IDE incluyendo Arduino-piezo-music-master.zip en Program > Include Library > Add .ZIP Library.
 
 ---
 
@@ -162,7 +166,7 @@ El sitio es **responsive**, lo cual lo hace cómodo para visualizar y operar des
 
 ## Créditos y Licencia
 
-Proyecto desarrollado por **[Tu Nombre]**, 2025.  
+Proyecto desarrollado por **Daniel Cangrejo**, 2025.  
 Basado en bibliotecas de código abierto como `ESPAsyncWebServer`, `RTClib`, y `LiquidCrystal_I2C`.
 
-Este proyecto se encuentra bajo la **Licencia MIT**. Siéntete libre de modificarlo, adaptarlo y compartirlo, siempre reconociendo el autor original.
+Siente la libertad de modificar y mejorar este proyecto según tus necesidades. Se sugiere mantener la atribución original si lo distribuyes o publicas en un repositorio público.
