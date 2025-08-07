@@ -76,6 +76,11 @@ La ESP32 actúa como un sistema autónomo de alarmas semanales. Cada semana se e
 
 **Nota:** LCD y RTC comparten el bus I2C. Asegúrate de no tener conflictos de dirección (0x27 para LCD, 0x68 para DS3231).
 
+### Diagrama de Conexiones![Conexiones](https://github.com/user-attachments/assets/3aba0553-55b9-43dc-807c-b8b58959a4a9)
+
+### Video Explicativo 
+
+[🔗 Ver explicación en YouTube]([https://www.youtube.com/watch?v=TU_ENLACE_AQUI](https://youtu.be/oOJFQ9MMbmI))
 ---
 
 ## Funcionamiento del Sistema
