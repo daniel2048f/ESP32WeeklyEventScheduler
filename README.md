@@ -80,7 +80,7 @@ La ESP32 actúa como un sistema autónomo de alarmas semanales. Cada semana se e
 
 ### Video Explicativo 
 
-[🔗 Ver explicación en YouTube]([https://www.youtube.com/watch?v=TU_ENLACE_AQUI](https://youtu.be/oOJFQ9MMbmI))
+[![Ver explicación en YouTube](https://img.youtube.com/vi/TU_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=TU_VIDEO_ID)
 
 ## Funcionamiento del Sistema
 
